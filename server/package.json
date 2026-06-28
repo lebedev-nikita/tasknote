@@ -1,0 +1,28 @@
+{
+  "name": "@tasknote/server",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/api/trpc.ts",
+      "default": "./src/api/trpc.ts"
+    }
+  },
+  "scripts": {
+    "dev": "  npx dotenv -e ../.env -- tsx --watch src/index.ts",
+    "start": "npx dotenv -e ../.env -- tsx         src/index.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@hono/node-server": "2.0.6",
+    "@trpc/server": "11.18.0",
+    "hono": "4.12.27",
+    "postgres": "^3.4.9",
+    "superjson": "2.2.6",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "tsx": "4.22.4"
+  }
+}

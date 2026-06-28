@@ -1,0 +1,10 @@
+{
+  "printWidth": 100,
+  "quoteProps": "preserve",
+  "experimentalTernaries": true,
+  "plugins": [
+    "prettier-plugin-organize-imports",
+    "prettier-plugin-tailwindcss",
+    "@lebedevna/prettier-plugin-sql"
+  ]
+}
